@@ -5,78 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to AI</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Modern GitHub-inspired styling */
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        github: {
-                            dark: '#0d1117',
-                            card: '#161b22',
-                            blue: '#58a6ff',
-                            green: '#3fb950'
-                        }
-                    }
-                }
-            }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    </script>
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #0d1117, #161b22);
+            color: #f0f6fc;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #58a6ff;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #c9d1d9;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #238636;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
-<body class="min-h-screen bg-gradient-to-br from-[#0d1117] via-[#161b22] to-black flex items-center justify-center overflow-hidden">
-
-    <!-- Background Effects -->
-    <div class="absolute inset-0">
-        <div class="absolute top-20 left-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-20 right-20 w-72 h-72 bg-green-500/20 rounded-full blur-3xl"></div>
+<body>
+    <div class="container">
+        <h1>Welcome to AI</h1>
+        <p>From GitHub Web</p>
+        <a href="https://github.com" class="btn">Explore GitHub</a>
     </div>
-
-    <!-- Main Card -->
-    <div class="relative z-10 max-w-2xl mx-auto px-6">
-        <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl shadow-2xl p-10 text-center">
-
-            <!-- Badge -->
-            <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6">
-                🚀 Powered by GitHub Web
-            </div>
-
-            <!-- Heading -->
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4">
-                Welcome to
-                <span class="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-                    AI
-                </span>
-            </h1>
-
-            <!-- Description -->
-            <p class="text-gray-400 text-lg md:text-xl max-w-xl mx-auto mb-8">
-                Build, innovate, and create the future with modern AI experiences
-                inspired by GitHub's elegant design language.
-            </p>
-
-            <!-- Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://github.com"
-                   class="px-8 py-4 bg-green-600 hover:bg-green-500 text-white rounded-xl font-semibold transition duration-300 shadow-lg hover:scale-105">
-                    Explore GitHub
-                </a>
-
-                <a href="#"
-                   class="px-8 py-4 bg-white/5 border border-white/10 hover:bg-white/10 text-white rounded-xl font-semibold transition duration-300">
-                    Learn More
-                </a>
-            </div>
-
-            <!-- Footer -->
-            <div class="mt-10 pt-6 border-t border-white/10">
-                <p class="text-sm text-gray-500">
-                    Designed with Tailwind CSS • GitHub Inspired • AI Powered
-                </p>
-            </div>
-
-        </div>
-    </div>
-
 </body>
 </html>
